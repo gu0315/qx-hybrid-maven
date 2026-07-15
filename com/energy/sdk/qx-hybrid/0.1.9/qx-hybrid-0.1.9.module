@@ -98,11 +98,11 @@
         {
           "name": "qx-hybrid-0.1.9.aar",
           "url": "qx-hybrid-0.1.9.aar",
-          "size": 277376,
-          "sha512": "622015c268eac7717cb65921d8d49cf272387a734747c87403b6ec1fe913d3d94e1098805325eaeafe9ebdc13a576dbd726335a85798aa94703061c951db8298",
-          "sha256": "df4eebdfd475cc06d5ec91eca9ccf4bbade22f5d22cf87a735ce350a463b507a",
-          "sha1": "ecf6455092faf24c0a8466864a52d5fdc34ad160",
-          "md5": "2a7fd8061b9bb4001ae79198057854f2"
+          "size": 277678,
+          "sha512": "93715c0e34ca369929767b6eeb6e0cc19db58e28776074a6351454a82083fc00cd9aa2da4f0cd8b1e1c9a9864ec098694adb519177bca582e473a59aab1d82c3",
+          "sha256": "93f4cd330e986f895d8b82ebed8ca2e818842bbe5a76afb94b701f230e0b92fa",
+          "sha1": "709c572534a7822459de2dc65220493be317458a",
+          "md5": "77e519262df96c81b3c35f3ed7be18cf"
         }
       ]
     },
@@ -190,11 +190,11 @@
         {
           "name": "qx-hybrid-0.1.9.aar",
           "url": "qx-hybrid-0.1.9.aar",
-          "size": 277376,
-          "sha512": "622015c268eac7717cb65921d8d49cf272387a734747c87403b6ec1fe913d3d94e1098805325eaeafe9ebdc13a576dbd726335a85798aa94703061c951db8298",
-          "sha256": "df4eebdfd475cc06d5ec91eca9ccf4bbade22f5d22cf87a735ce350a463b507a",
-          "sha1": "ecf6455092faf24c0a8466864a52d5fdc34ad160",
-          "md5": "2a7fd8061b9bb4001ae79198057854f2"
+          "size": 277678,
+          "sha512": "93715c0e34ca369929767b6eeb6e0cc19db58e28776074a6351454a82083fc00cd9aa2da4f0cd8b1e1c9a9864ec098694adb519177bca582e473a59aab1d82c3",
+          "sha256": "93f4cd330e986f895d8b82ebed8ca2e818842bbe5a76afb94b701f230e0b92fa",
+          "sha1": "709c572534a7822459de2dc65220493be317458a",
+          "md5": "77e519262df96c81b3c35f3ed7be18cf"
         }
       ]
     },
