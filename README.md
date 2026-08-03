@@ -3,7 +3,7 @@
 本仓库是一个 **Maven 仓库目录**(由 Gradle `maven-publish` 生成),用于把 `qx_hybrid` SDK 分发给其他团队。
 直接引用本仓库的 raw 地址即可集成,无需公司内网 Maven 服务。
 
-- **依赖坐标(GAV):** `com.energy.sdk:qx-hybrid:0.1.8`
+- **依赖坐标(GAV):** `com.energy.sdk:qx-hybrid:0.1.11`
 - **产物:** release AAR + sources jar + pom(含完整传递依赖)
 
 ---
@@ -38,7 +38,7 @@ dependencyResolutionManagement {
 
 ```groovy
 dependencies {
-    implementation 'com.energy.sdk:qx-hybrid:0.1.8'
+    implementation 'com.energy.sdk:qx-hybrid:0.1.11'
 }
 ```
 
@@ -65,11 +65,11 @@ dependencies {
 ```bash
 cd ~/qx-hybrid-maven
 git add .
-git commit -m "release qx-hybrid 0.1.9"
+git commit -m "release qx-hybrid 0.1.12"
 git push
 ```
 
-使用方把依赖坐标的版本号改成 `0.1.9` 即可升级。
+使用方把依赖坐标的版本号改成 `0.1.12` 即可升级。
 
 ---
 
