@@ -52,24 +52,31 @@ dependencies {
 
 ## 二、发布方(我)怎么发新版本
 
-在 `chery_android` 工程根目录执行(版本号自行递增):
-
-```bash
-./gradlew :qx_hybrid:publishReleasePublicationToRemoteMavenRepository \
-  -PMAVEN_REPOSITORY_URL="file://$HOME/qx-hybrid-maven" \
-  -PQX_HYBRID_VERSION=0.1.9
-```
-
-发布完到本仓库目录提交并推送:
+用本仓库根目录的一键脚本(构建 → commit → push 全包):
 
 ```bash
 cd ~/qx-hybrid-maven
-git add .
-git commit -m "release qx-hybrid 0.1.12"
-git push
+./publish.sh 0.1.12
 ```
 
 使用方把依赖坐标的版本号改成 `0.1.12` 即可升级。
+
+### 覆盖已发布的版本
+
+脚本默认会拦截已发布过的版本号,确认要覆盖时加 `-f`:
+
+```bash
+./publish.sh 0.1.11 -f
+```
+
+两个注意点:
+
+1. **多个版本一起发时,最高版本要放最后发** —— 否则 `maven-metadata.xml` 的 `<latest>`/`<release>` 会被写成低版本。
+2. **必须通知使用方清缓存** —— 版本号没变时 Gradle 不会重新下载,他们构建时用的还是旧 aar。让他们跑 `./gradlew --refresh-dependencies`,或删掉 `~/.gradle/caches/modules-2/files-2.1/com.energy.sdk`。
+
+> 覆盖发布是在跟 Maven「版本不可变」的核心假设对抗,能升版本号就尽量升。
+> 联调阶段想让对方自动拿到最新,用 `-SNAPSHOT` 版本(Gradle 会自动当作 changing module),
+> 稳定版仍用不可变的数字版本。
 
 ---
 
